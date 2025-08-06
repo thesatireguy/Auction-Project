@@ -1,4 +1,54 @@
-<pre> AuctionWebsite/ ├── Backend/ │ ├── server.js # Node.js server entry point │ ├── config/ │ │ └── db.js # MongoDB connection setup │ ├── models/ │ │ ├── Product.js # Product schema (Mongoose) │ │ └── User.js # User schema (Mongoose) │ ├── routes/ # (Reserved for future route separation) │ └── .env # Environment variables ├── Frontend/ │ ├── index.html # Home page │ ├── sell.html # Product upload form │ ├── listed.html # "My Listings" page │ ├── checkout.html # Checkout page │ ├── product.html # Product detail page │ ├── CSS/ # Stylesheets │ └── JS/ # Client-side scripts (e.g., sell.js, listed.js) ├── start-server.bat # Script to start server (Windows) └── launch.vbs # Optional script to launch site </pre>
+### 📁 Project Structure
+
+#### AuctionWebsite/
+- **Backend/**
+  - `server.js`  
+    → Entry point for the Node.js backend server
+
+  - `config/db.js`  
+    → MongoDB connection setup
+
+  - `models/Product.js`  
+    → Mongoose schema for products
+
+  - `models/User.js`  
+    → Mongoose schema for users
+
+  - `routes/`  
+    → (Reserved for future API route separation)
+
+  - `.env`  
+    → Environment variables (e.g., DB URI, Port)
+
+- **Frontend/**
+  - `index.html`  
+    → Homepage
+
+  - `sell.html`  
+    → Product upload form
+
+  - `listed.html`  
+    → User's listed products page
+
+  - `checkout.html`  
+    → Checkout/purchase flow
+
+  - `product.html`  
+    → Product details view
+
+  - `CSS/`  
+    → Styling files
+
+  - `JS/`  
+    → Frontend logic (e.g., `sell.js`, `listed.js`)
+
+- `start-server.bat`  
+  → Script to start the server on Windows
+
+- `launch.vbs`  
+  → Optional script to auto-launch the site
+
+
 Clone the Repository:
 git clone https://github.com/thesatireguy/Auction-Project.git
 cd AuctionWebsite/Backend
