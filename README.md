@@ -1,16 +1,13 @@
 🗂️ Project Structure
-bash
-Copy
-Edit
 AuctionWebsite/
 ├── Backend/
-│   ├── server.js              # Entry point for the Node.js server
+│   ├── server.js              # Node.js server entry point
 │   ├── config/
-│   │   └── db.js              # MongoDB connection
+│   │   └── db.js              # MongoDB connection setup
 │   ├── models/
-│   │   ├── Product.js         # Mongoose schema for products
-│   │   └── User.js            # Mongoose schema for users
-│   ├── routes/                # (Optional future separation)
+│   │   ├── Product.js         # Product schema (Mongoose)
+│   │   └── User.js            # User schema (Mongoose)
+│   ├── routes/                # (Reserved for future route separation)
 │   └── .env                   # Environment variables
 ├── Frontend/
 │   ├── index.html             # Home page
@@ -18,13 +15,13 @@ AuctionWebsite/
 │   ├── listed.html            # "My Listings" page
 │   ├── checkout.html          # Checkout page
 │   ├── product.html           # Product detail page
-│   ├── CSS/                   # Inline or embedded CSS
-│   └── JS/                    # Frontend logic (e.g., sell.js, listed.js)
-├── start-server.bat          # Launch script for local development (Windows)
-└── launch.vbs                # Optional helper for launching site
-🛠️ Installation
+│   ├── CSS/                   # Stylesheets
+│   └── JS/                    # Client-side scripts (e.g., sell.js, listed.js)
+├── start-server.bat          # Script to start server (Windows)
+└── launch.vbs                # Optional script to launch site
+
 Clone the Repository:
-git clone https://github.com/yourusername/AuctionWebsite.git
+git clone https://github.com/thesatireguy/Auction-Project.git
 cd AuctionWebsite/Backend
 
 Install Backend Dependencies:
